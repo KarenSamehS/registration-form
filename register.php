@@ -12,7 +12,7 @@
     }
 
     .container {
-      background-color: #f9f4ff; /* lighter than #f3e9ff */
+      background-color: #f9f4ff; 
       max-width: 500px;
       margin: 60px auto;
       padding: 30px 40px;
