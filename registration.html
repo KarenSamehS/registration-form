@@ -6,21 +6,48 @@
   <style>
     body {
       font-family: Arial;
-      background:linear-gradient(to bottom right, #e0c3fc, #8ec5fc);
-    }
+      background: linear-gradient(135deg, #476a93, #304a6a);
+      color: white;
 
-    h2 {
+    }
+     body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      background-image: 
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(gold 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(gold 1px, transparent 1px),
+        radial-gradient(#ffd700 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+      background-size: 150px 150px;
+      background-position: 
+        20px 30px, 
+        70px 90px, 
+        50px 160px, 
+        190px 110px,
+        120px 200px,
+        300px 80px;
+      opacity: 0.4;
+    }
+    h1 {
       text-align: center;
-      color: #333;
+      color:#ffdb00;
     }
 
     form {
-  background-color: #f9f4ff;
+      background-color: #1e2e44;
       padding: 25px 30px;
       margin: 25px auto;
       width: 420px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(64, 196, 255, 0.6);
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
     }
 
     input[type="text"],
@@ -31,12 +58,15 @@
       padding: 10px;
       margin-bottom: 18px;
       border: 1px solid #ccc;
+      background-color: white;
+      color: black;
       border-radius: 5px;
     }
 
     label {
       font-weight: bold;
       display: block;
+      color: white;
       margin-bottom: 5px;
     }
 
@@ -52,13 +82,14 @@
     td {
       padding: 5px 10px;
       vertical-align: middle;
+       color: white;
     }
 
     input[type="submit"] {
       width: 100%;
       padding: 12px;
-      background-color: #4CAF50;
-      color: white;
+      background-color: gold;
+      color: black;
       font-size: 16px;
       border: none;
       border-radius: 6px;
@@ -67,13 +98,13 @@
     }
 
     input[type="submit"]:hover {
-      background-color: #45a049;
+      background-color: #ffdf00;
     }
   </style>
 </head>
 <body>
 
-  <h2>Simple Registration Form</h2>
+  <h1>Simple Registration Form</h1>
 
   <form action="register.php" method="POST">
     <label for="fullname">Full Name:</label>
